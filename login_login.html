@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <title>登录</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/login.css" rel="stylesheet" type="text/css"/>
+		
+    </head>
+
+    <body>
+    	
+        <header>
+        	<ul class="header">
+                <li class="header_back" onClick="javascript:history.go(-1);"><div></div></li>
+                <li class="header_title">登录</li>
+                <li class="header_prev"></li>
+            </ul>
+        </header>
+    
+    	<div class="wrap">
+    		
+            <ul class="loginbox">
+            	<li>
+                	<a>+86</a>
+                	<input type="text" placeholder="输入手机号"/>
+                </li>
+                <li>
+                	<a><img src="images/login_password.png"/></a>
+                	<input type="password" placeholder="至少6个字符"/>
+                </li>
+                <a class="forget" href="login_resetPassWord.html">忘记密码？</a>
+                <a class="login" href="index.html">登录</a>
+            </ul>
+            
+            <!--第三方登录-->
+            <div class="login_or">
+                <a>OR</a>
+            </div>
+            <div class="other_login">
+            	<p>使用以下社交工具快速登录</p>
+                <ul class="loginBtn">
+                    <li class="btn_weixin">
+                        <a href="#">
+                            <div></div>
+                        </a>
+                        <p>微信</p>
+                    </li>
+                    <li class="btn_qq">
+                        <a href="#">
+                            <div></div>
+                        </a>
+						<p>QQ</p>
+                    </li>
+                </ul>
+            </div>
+            <!--第三方登录 end-->
+            
+        </div>
+        
+    </body>
+    
+</html>

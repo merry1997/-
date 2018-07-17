@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <title>个人中心</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+		
+    </head>
+
+    <body style="background-color: #f6f6f6;">
+    
+    	<header>
+        	<ul class="header">
+                <li class="header_back" onClick="javascript:history.go(-1);"><div></div></li>
+                <li class="header_title">个人资料</li>
+                <li class="header_prev"></li>
+            </ul>
+        </header>
+    	
+    	<div class="clearfix" style="height: 15px;"></div>
+    	<!--资料列表-->
+    	<div class="con_nav my_data_list">
+	        <div class="list_every clearfix">
+	        	<label>头像</label>
+	        	<div class="img_box fr">
+	        		<img src="images/news_img06.jpg" alt="icon" />
+	        	</div>
+	        </div>
+	       <div class="list_every clearfix">
+	        	<label>昵称</label>
+                <input type="text" value="小妞"/>
+	        </div>
+	        <div class="list_every clearfix">
+	        	<label>个性签名</label>
+                <input type="text" value="每天的心情都是好好哒"/>
+	        </div>
+	        <a class="list_every clearfix">
+	        	<label>性别</label>
+                <select>
+					<option value="">女</option>
+					<option value="">男</option>
+                    <option value="">保密</option>
+				</select>
+	        	
+	        </a>
+        </div>
+        
+        <a href="#" class="but_box_red data">保存</a>
+        
+    </body>
+    
+</html>

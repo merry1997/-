@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/*css reset start*/
+*{
+	padding:0;
+	margin:0;
+	list-style:none;
+	border:0;
+}
+html{
+	font-size: 100px;
+}
+body{
+	font-family: "Microsoft YaHei","微软雅黑",Helvetica,"黑体",'SimSun',Arial,Tahoma;
+	color: #000;
+	font-size:0.14rem;/*实际相当于14px*/
+}
+a,a:visited{
+	color: #000;
+	display: inline-block;
+	text-decoration: none;
+}
+a:hover{
+   text-decoration: none;
+}
+img{
+	width: 100%;
+	display: block;
+	vertical-align: middle;
+}
+button, select,input,textarea,option,optgroup{
+    font-family: inherit;
+    font-size: 100%;
+	outline: none;
+	/*把默认样式去掉*/
+	appearance:none;
+	-webkit-appearance:none;
+	-o-appearance:none;
+	-moz-appearance:none;
+	border-radius:0;
+	/*把默认样式去掉 end*/
+    margin: 0px;
+}
+
+/*header*/
+
+header{
+	width:7.5rem;
+	height:0.9rem;
+}
+header .header{
+	width:7.5rem;
+	height:0.88rem;
+	position:fixed;
+	left:0rem;top:0rem;
+	z-index:100;
+	background:#fff;
+	box-shadow:1px 1px 5px #e5e5e5;
+	overflow:hidden;
+}
+header .header li{
+	float:left;
+}
+.header .header_back{
+	width:2.0rem;
+	height:0.88rem;
+	display:inline-block;
+}
+.header .header_back div{
+	width:0.23rem;
+	height:0.5rem;
+	margin:0.26rem 0rem 0rem 0.30rem;
+	background:url(../images/header_back.png) no-repeat 0rem 0rem / 0.23rem 0.39rem;
+}
+.header .header_title{
+	width:3.5rem;
+	height:0.88rem;
+	display:inline-block;
+	text-align:center;
+	line-height:0.88rem;
+	font-size:0.36rem;
+	color:#000;
+}
+.header .header_prev{
+	width:2.0rem;
+	height:0.88rem;
+	display:inline-block;
+	line-height:0.88rem;
+}
+/*header end*/
+
+/*footer*/
+
+.main_nav{
+	width:7.5rem;
+	height:0.97rem;
+	background:#fff;
+	border-top:1px solid #b2b2b2;
+	overflow:hidden;
+	position:fixed;
+	left:0rem;bottom:0rem;
+	z-index:100;
+}
+.main_nav a{
+	width:1.875rem;
+	float:left;
+	text-align:center;
+	color:#3d3d3d;
+	font-size:0.28rem;
+	margin-top:0.1rem;
+}
+.main_nav a div{
+	width:0.46rem;
+	height:0.48rem;
+	margin:0 auto;
+}
+/*产品*/
+.main_nav .product div{
+	background:url(../images/table.png) no-repeat 0.00rem -0.08rem / 2.88rem 1.07rem;
+}
+.main_nav .product.selected div{
+	background:url(../images/table.png) no-repeat 0.00rem -0.58rem / 2.88rem 1.07rem;
+}
+.main_nav .product.selected span{
+	color:#df1e3e;
+}
+/*资讯*/
+.main_nav .message div{
+	background:url(../images/table.png) no-repeat -0.73rem -0.08rem / 2.88rem 1.07rem;
+}
+.main_nav .message.selected div{
+	background:url(../images/table.png) no-repeat -0.73rem -0.58rem / 2.88rem 1.07rem;
+}
+.main_nav .message.selected span{
+	color:#df1e3e;
+}
+/*购物车*/
+.main_nav .shooping_cart div{
+	background:url(../images/table.png) no-repeat -1.5rem -0.08rem / 2.88rem 1.07rem;
+}
+.main_nav .shooping_cart.selected div{
+	background:url(../images/table.png) no-repeat -1.5rem -0.58rem / 2.88rem 1.07rem;
+}
+.main_nav .shooping_cart.selected span{
+	color:#df1e3e;
+}
+/*我的*/
+.main_nav .my div{
+	background:url(../images/table.png) no-repeat -2.3rem -0.08rem / 2.88rem 1.07rem;
+}
+.main_nav .my.selected div{
+	background:url(../images/table.png) no-repeat -2.3rem -0.58rem / 2.88rem 1.07rem;
+}
+.main_nav .my.selected span{
+	color:#df1e3e;
+}
+/*footer end*/
+
+/*--------蒙版------------*/
+.mengban{
+	display:none;
+	width:100%;
+	background:rgba(0, 0, 0, 0.4) none repeat scroll 0 0 !important;
+	position:fixed;
+	top:0;left:0;
+	z-index:999;
+}
+.tankuang{
+	display:none;
+	width:7.5rem;
+	position:fixed;
+	left:0;
+	bottom:0;
+	z-index:10000;
+	bcckground:#fff;
+}
+.tankuang .okbtn{
+	display:block;
+	height:0.98rem;
+	line-height:0.98rem;
+	text-align:center;
+	color:#fff;
+	background:#df1e3e;
+	font-size:0.34rem;
+}
+/*--------蒙版 end------------*/
+/*----------分享------------*/
+.sharebox{
+	width:6.9rem;
+	background:#fff;
+	position:fixed;
+	left:0.3rem;
+	bottom:0rem;
+	z-index:1001;
+}
+.sharebox .closebtn{
+	display:block;
+	text-align:center;
+	line-height:0.98rem;
+	border-top:1px solid #e5e5e5;
+	color:#000;
+	font-size:0.3rem;
+}
+.sharebox .share_btnbox{
+	overflow:hidden;
+}
+.sharebox .share_btnbox li{
+	width:25%;
+	float:left;
+	text-align:center;
+	line-height:0.8rem;
+	font-size:0.28rem;
+	color:#747474;
+}
+.sharebox .share_btnbox li div{
+	width:1.06rem;
+	height:1.06rem;
+	margin:0 auto;
+	border:2px solid #df1e3e;
+	border-radius:50%;
+}
+.sharebox .share_btnbox .weixin{
+	width:0.46rem;
+	height:0.50rem;
+	margin-top:0.3rem;
+	background:url(../images/btn2.png) no-repeat 0rem 0rem / 2.34rem 0.6rem;
+}
+.sharebox .share_btnbox .friends{
+	width:0.52rem;
+	height:0.50rem;
+	margin-top:0.3rem;
+	background:url(../images/btn2.png) no-repeat -0.56rem 0rem / 2.34rem 0.6rem;
+}
+.sharebox .share_btnbox .qq{
+	width:0.50rem;
+	height:0.50rem;
+	margin-top:0.3rem;
+	background:url(../images/btn2.png) no-repeat -1.16rem 0rem / 2.34rem 0.6rem;
+}
+.sharebox .share_btnbox .sina{
+	width:0.60rem;
+	height:0.50rem;
+	margin-top:0.3rem;
+	background:url(../images/btn2.png) no-repeat -1.76rem 0rem / 2.34rem 0.6rem;
+}
+/*----------分享 end------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

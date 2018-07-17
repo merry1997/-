@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <title>首页</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+		
+    </head>
+
+    <body>
+    	
+        <header>
+        	<ul class="header">
+                <li class="header_back" onClick="javascript:history.go(-1);"><div></div></li>
+                <li class="header_title">确认订单</li>
+                <li class="header_prev"></li>
+            </ul>
+        </header>
+    
+    	<div class="wrap detalis_order">
+    		
+            <!--section 1-->
+            <section class="order1">
+            
+            	<a class="order_msg" href="my_address.html">
+                	<p class="msg">
+                    	<span>张三</span>
+                        <span class="phone">13333333333</span>
+                    </p>
+                    <p class="address">北京大兴区西红门镇30号3门1室内</p>
+                    <div class="arrow_right"></div>
+                </a>
+                    
+            </section>
+            <!--section 1 end-->
+            <!--section 2-->
+            <section class="order2">
+            
+            	<p class="order_num">订单号：<span>A12124225</span></p>
+                <div class="order_msgbox">
+                    <img src="images/index_img09.jpg"/>
+                    <div class="order_msg">
+                        <p class="order_note">新鲜自养土鸡，礼盒包装</p>
+                        <p class="order_name">农家土鸡蛋</p>
+                        <p class="order_number">
+                        	<a class="size">20枚</a>
+                            <a class="price">￥<span>160元</span></a>
+                            <a class="number">X<span class="total_num">4</span></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="text">
+                	<textarea type="text" placeholder="如有特殊要求请填写(40字内)"></textarea>
+                </div>
+                    
+            </section>
+            <!--section 2 end-->
+            <!--section 3-->
+            <section class="order3">
+                
+                <p class="payment">支付方式</p>
+                <ul class="paymentlist" id="payment">
+                	<li class="payment1">
+                    	<div class="btnbox"></div>
+                        <span>余额支付</span>
+                        <p id="balance">当前余额：200.00</p>
+                        <a class="selected"></a>
+                    </li>
+                    <li class="payment2">
+                    	<div class="btnbox"></div>
+                        <span>余额支付</span>
+                        <a></a>
+                    </li>
+                    <li class="payment3">
+                    	<div class="btnbox"></div>
+                        <span>余额支付</span>
+                        <a></a>
+                    </li>
+                </ul>
+                   
+            </section>
+            <!--section 3 end-->
+            
+        </div>
+        
+        <footer>
+        	
+            <nav class="buy_nav order">
+                <a class="buy_num">共<span>￥200.00</span></a>
+                <a class="buy_buy" href="#">立即支付</a>
+            </nav>
+            
+        </footer>
+        
+    </body>
+    
+</html>
